@@ -23,6 +23,6 @@ x = trainingdata.drop('meal', axis = 1)
 
 model = RandomForestClassifier(n_estimators=1000, n_jobs = -1, random_state=42)
 
-modelFit = forest.fit(x, y)
+modelFit = model.fit(x, y)
 
 pred = modelFit.predict(preddata)
